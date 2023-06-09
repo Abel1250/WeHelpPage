@@ -1,0 +1,74 @@
+/* 桌機設定*/
+.body{
+    background-color:#E0E0E0;
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+.board{
+    background-color: white;
+    width: 70%;
+    margin-bottom:10px ;
+}
+.headline{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.question{
+    margin: 30px;
+    font-weight: bold;
+    border-bottom:1px #000 solid;
+    padding-bottom:5px;
+}
+.answer{
+    margin: 20px;
+}
+
+
+
+.list{
+    display: flex;/*下層水平對其並排*/
+    justify-content: center;/*下層置中*/
+    justify-content: center;
+    align-items: center;
+
+}
+.product{
+    flex:none;
+    width: 280px;
+    margin: 10px;
+    background-color: peru;
+
+}
+/* 平板設定*/
+@media (max-width:1250px){
+    /* 螢幕寬度小於1250px,套用這個區塊的css*/
+    .list{
+        flex-wrap: wrap;
+    }
+    .product{
+        width:45%;
+    }
+}
+/* 手機設定*/
+@media (max-width:500px){
+    /* 螢幕寬度小於1250px,套用這個區塊的css*/
+    .headline{
+        font-size: 20px;
+    }
+    .list{
+        flex-wrap: wrap;
+    }
+    .product{
+        width: 90%;
+    }
+    .desktop-menu{
+        text-align: center;
+        display: none;
+    }
+    .mobile-menu{
+        text-align: center;
+        display:block;
+}
